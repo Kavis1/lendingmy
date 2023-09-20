@@ -1,7 +1,7 @@
 const apiKey = 'b9da9b5bbd39af56896028131b9155c5'; // Замените на ваш API ключ
 
 function getCurrentTrack() {
-  fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=YOUR_USERNAME&api_key=${apiKey}&format=json&limit=1`)
+  fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=Kaviser1dhdh&api_key=${apiKey}&format=json&limit=1`)
     .then(response => response.json())
     .then(data => {
       if (data.recenttracks.track.length > 0) {
